@@ -4,6 +4,7 @@ public class Conta {
     private String agencia = "1258-X";
     private int numeroConta = 549687;
     private double saldo = 6943.80;
+    private Cliente cliente;
 
     public void realizarDeposito(double valor){
         this.saldo += valor;
