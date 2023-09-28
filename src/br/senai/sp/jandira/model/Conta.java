@@ -42,7 +42,6 @@ public class Conta {
             System.out.println("Saldo não disponivel");
         }
     }
-
     public Conta pesquisarConta(long cpf){
         for (Conta conta : listConta){
 
@@ -54,16 +53,14 @@ public class Conta {
         }
         return null;
     }
-
     public void adicionarConta(Conta conta){
         listConta.add(conta);
     }
-
     public void gerarConta(Cliente cliente){
         this.cliente = cliente;
         numeroConta = (int)(Math.random()*10000);
+        System.out.println("O número da sua conta é: " + numeroConta);
     }
-
     public void realizarDeposito(double valor){
         this.saldo += valor;
         System.out.println("O saldo disponivel na conta é: " + this.saldo);

@@ -7,9 +7,7 @@ import java.util.Scanner;
 public class Cliente {
     private String nome;
     private long cpf, rg, telefone;
-
     Scanner scanner = new Scanner(System.in);
-
     List<Cliente> listCliente = new ArrayList<>();
 
     public Cliente pesquisarCliente(long cpf){
